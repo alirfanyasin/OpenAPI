@@ -15,7 +15,17 @@
       }
     },
     "servers": [
-      {"url":"https://api.server.test/v1"}
+      {
+        "description": "Todolist RESTful API Server",
+        "url": "https://{env}.nameserver.test/api/v1",
+        "variables": {
+          "env": {
+            "description": "Server environment",
+            "default" : "dev",
+            "enum" : ["dev", "prod"]
+          }
+        }
+      }
     ],
     "paths": {
     }
