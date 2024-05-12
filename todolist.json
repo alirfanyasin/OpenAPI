@@ -53,13 +53,26 @@
               "name": "name",
               "in": "query",
               "required": false,
-              "description": "Filter by name",
+              "description": "Search todolist by name",
               "schema" : {
                 "type": "string", 
-                "default" : "Irfan Yasin",
                 "nullable": true,
                 "minLength": 1,
                 "maxLength": 100
+              },
+              "examples": {
+                "java" : {
+                  "description": "Example name java",
+                  "value" : "java"
+                },
+                "php" : {
+                  "description": "Example name php",
+                  "value" : "php"
+                },
+                "JavaScript" : {
+                  "description": "Example name JavaScript",
+                  "value" : "JavaScript"
+                }
               }
 
             }
@@ -95,6 +108,26 @@
                       }
                     }
                   }
+                },
+                "examples": {
+                  "java" : {
+                    "description": "Example create todolist Java",
+                    "value" : {
+                      "name" : "Java",
+                      "priority" : 2,
+                      "tags" : [
+                        "Java", "Progarmming"
+                      ]
+                    }
+                  },
+                  "PHP" : {
+                    "description": "Example create todolist PHP",
+                    "value" : {
+                      "name" : "PHP",
+                      "priority" : 4, 
+                      "tags" : ["PHP", "Hypertext Preprocessor", "Progarmming"]
+                    }
+                  }
                 }
               }
             }
@@ -116,6 +149,16 @@
                 "type": "string",
                 "minLength": 1,
                 "maxLength": 100
+              },
+              "examples": {
+                "java" : {
+                  "description": "Sample todolist id for java",
+                  "value" : "1"
+                },
+                "php" : {
+                  "description": "Sample todolist id for php",
+                  "value" : "2"
+                }
               }
             }
           ],
@@ -143,6 +186,26 @@
                           "type": "string",
                           "minLength": 1
                       }
+                    }
+                  }
+                },
+                "examples": {
+                  "java" : {
+                    "description": "Example create todolist Java",
+                    "value" : {
+                      "name" : "Java",
+                      "priority" : 2,
+                      "tags" : [
+                        "Java", "Progarmming"
+                      ]
+                    }
+                  },
+                  "PHP" : {
+                    "description": "Example create todolist PHP",
+                    "value" : {
+                      "name" : "PHP",
+                      "priority" : 4, 
+                      "tags" : ["PHP", "Hypertext Preprocessor", "Progarmming"]
                     }
                   }
                 }
