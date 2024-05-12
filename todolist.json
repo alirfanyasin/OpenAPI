@@ -1,0 +1,22 @@
+{
+    "openapi":"3.0.2",
+    "info": {
+      "title":"Todolist",
+      "description": "Membuat documentation API menggunakan Open API",
+      "version":"1.0",
+      "contact": {
+        "name": "Irfan Yasin",
+        "email": "irfanyasin37@gmail.com",
+        "url": "https://github.com/alirfanyasin"
+      },
+      "license": {
+        "name": "APACHE 2.0",
+        "url": "https://apace.com"
+      }
+    },
+    "servers": [
+      {"url":"https://api.server.test/v1"}
+    ],
+    "paths": {
+    }
+  }
