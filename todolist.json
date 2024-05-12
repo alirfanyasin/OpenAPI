@@ -32,5 +32,23 @@
       "url": "https://github.com/alirfanyasin"
     },
     "paths": {
+      "/todolist" : {
+
+        "get" : {
+
+        },
+        "post" : {
+
+        }
+      }, 
+      "/todolist/{id}" : {
+        "put" : {
+
+        },
+        "delete" : {
+          
+        }
+      }
+
     }
   }
