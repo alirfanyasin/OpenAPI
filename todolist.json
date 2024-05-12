@@ -35,18 +35,26 @@
       "/todolist" : {
 
         "get" : {
-
+          "summary": "Get All Todolist",
+          "description": "Get all data todolist in database",
+          "responses": {}
         },
         "post" : {
-
+          "summary": "Create New Todolist",
+          "description": "Create new todolist to database",
+          "responses": {}
         }
       }, 
       "/todolist/{id}" : {
         "put" : {
-
+          "summary": "Update Todolist",
+          "description": "Update todolist by id to database",
+          "responses": {}
         },
         "delete" : {
-          
+          "summary": "Delete Todolist",
+          "description": "Delete todolist by id to database",
+          "responses": {}
         }
       }
 
