@@ -37,6 +37,21 @@
         "get" : {
           "summary": "Get All Todolist",
           "description": "Get all data todolist in database",
+          "parameters": [
+            {
+              "name": "include_done",
+              "in": "query",
+              "required": false,
+              "description": "Is include done todolist"
+            },
+            {
+              "name": "name",
+              "in": "query",
+              "required": false,
+              "description": "Filter by name"
+
+            }
+          ],
           "responses": {}
         },
         "post" : {
@@ -45,15 +60,31 @@
           "responses": {}
         }
       }, 
-      "/todolist/{id}" : {
+      "/todolist/{todolistId}" : {
         "put" : {
           "summary": "Update Todolist",
           "description": "Update todolist by id to database",
+          "parameters": [
+            {
+              "name": "todolistId",
+              "in": "path",
+              "required": true,
+              "description": "todolist update by id"
+            }
+          ],
           "responses": {}
         },
         "delete" : {
           "summary": "Delete Todolist",
           "description": "Delete todolist by id to database",
+          "parameters": [
+            {
+              "name": "todolistId",
+              "in": "path",
+              "required": true,
+              "description": "todolist delete by id"
+            }
+          ],
           "responses": {}
         }
       }
